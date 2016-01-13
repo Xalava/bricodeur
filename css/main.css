@@ -96,6 +96,53 @@ textarea {
    ========================================================================== */
 
 
+html{
+    height: 100%;
+}
+
+body {
+  background: linear-gradient(top, #EEE 6%, #A9A1FF 100%);
+  background: -webkit-linear-gradient(top, #EEE 6%, #A9A1FF 100%);
+  background: -moz-linear-gradient(top, #EEE 6%, #A9A1FF 100%);
+  background: -o-linear-gradient(top, #EEE 6%, #A9A1FF 100%);
+  background-repeat: no-repeat;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-weight: 100;
+  padding: 5%;
+}
+
+ h1 {
+    font-size: 4rem;
+  }
+
+.typing{
+  font-size: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 50rem;
+  animation: type 4s steps(60, end); 
+}
+
+.cursor{
+    font-size: 3rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+.contact{
+    position:absolute;
+    bottom:5%;
+    right:5%;
+}
+a{text-decoration: none; color:white;}
+
 
 
 
@@ -280,3 +327,4 @@ textarea {
         page-break-after: avoid;
     }
 }
+
